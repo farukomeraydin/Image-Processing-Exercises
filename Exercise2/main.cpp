@@ -5,8 +5,8 @@ using namespace std;
 
 int main()
 {
-	/*Adim-1'de Figure304 için Negatif Transformun yapildigi kod*/
-	/*Image input, output;
+	/*Adim-1'de Figure304 iÃ§in Negatif Transformun yapildigi kod*/
+	Image input, output;
 	
 	char inputName[] = "Fig0304(a)(breast_digital_Xray).pgm";
 	char outputName[] = "Fig0304(b)(breast_digital_Xray).pgm";
@@ -15,7 +15,7 @@ int main()
 	output = input.NegativeTransform(input);
 	output.writeImage(outputName);*/
 
-	/*Adim-1'de Figure305 için Log Transformun yapildigi kod*/
+	/*Adim-1'de Figure305 iÃ§in Log Transformun yapildigi kod*/
 	/*Image input, output;
 
 	char inputName[] = "Fig0305(a)(DFT_no_log).pgm";
@@ -23,9 +23,9 @@ int main()
 	input.readImage(inputName);
 
 	output = input.LogTransform(input);
-	output.writeImage(outputName);*/
+	output.writeImage(outputName);
 
-	/*Adim-1'de Figure308 için Gamma Correction yapildigi kod*/
+	/*Adim-1'de Figure308 iÃ§in Gamma Correction yapildigi kod*/
 	/*Image input, output;
 
 	char inputName[] = "Fig0308(a)(fractured_spine).pgm";
@@ -45,8 +45,8 @@ int main()
 	output = input.GammaCorrection(input, 0.3f);
 	output.writeImage(outputName3);*/
 
-	/*Adim-1'de Figure309 için Gamma Correction yapildigi kod*/
-	/*Image input, output;
+	/*Adim-1'de Figure309 iÃ§in Gamma Correction yapildigi kod*/
+	Image input, output;
 
 	char inputName[] = "Fig0309(a)(washed_out_aerial_image).pgm";
 	char outputName1[] = "Fig0309(b)(washed_out_aerial_image).pgm";
@@ -63,10 +63,10 @@ int main()
 
 	input.readImage(inputName);
 	output = input.GammaCorrection(input, 5.0f);
-	output.writeImage(outputName3);*/
+	output.writeImage(outputName3);
 
-	/*Adim-1'de Figure0333 için Averaging Filter yapildigi kod*/
-	/*Image input, output;
+	/*Adim-1'de Figure0333 iÃ§in Averaging Filter yapildigi kod*/
+	Image input, output;
 	char inputName[] = "Fig0333(a)(test_pattern_blurring_orig).pgm";
 	char outputName1[] = "Fig0333(b)(test_pattern_blurring_orig).pgm";
 	char outputName2[] = "Fig0333(c)(test_pattern_blurring_orig).pgm";
@@ -92,19 +92,19 @@ int main()
 
 	input.readImage(inputName);
 	output = input.AveragingFilter(input, 35);
-	output.writeImage(outputName5);*/
+	output.writeImage(outputName5);
 
-	/*Adim-1'de Figure0335 için Averaging Filter yapildigi kod*/
-	/*Image input, output;
+	/*Adim-1'de Figure0335 iÃ§in Averaging Filter yapildigi kod*/
+	Image input, output;
 	char inputName[] = "Fig0335(a)(ckt_board_saltpep_prob_pt05).pgm";
 	char outputName[] = "Fig0335(b)(ckt_board_saltpep_prob_pt05).pgm";
 
 	input.readImage(inputName);
 	output = input.MedianFilter(input);
-	output.writeImage(outputName);*/
+	output.writeImage(outputName);
 
-	/*Adim-2'de Kontrast sorunu olan 3 resmin düzenlenmesi*/
-	/*Image input1, output1, input2, output2, input3, output3;
+	/*Adim-2'de Kontrast sorunu olan 3 resmin dÃ¼zenlenmesi*/
+	Image input1, output1, input2, output2, input3, output3;
 
 	char inputName1[] = "ContrastIssue1.pgm";
 	char outputName1[] = "ContrastIssue1_Output.pgm";
@@ -125,7 +125,7 @@ int main()
 
 	input3.readImage(inputName3);
 	output3 = input3.MedianFilter(input3);
-	output3.writeImage(outputName3);*/
+	output3.writeImage(outputName3);
 }
 
 
