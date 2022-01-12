@@ -1,6 +1,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include "Image.h"
-#include <Windows.h>
+
 using namespace std;
 
 int main()
@@ -85,11 +85,11 @@ int main()
 	output6.writeImage(outputName6);
 
 	input7.readImage(inputName);
-	output7 = input7.Sharpen(input7, .0, -1.0, .0, -1.0, 5.0, -1.0, .0, -1.0, .0); //Keskinlestirme için uygun maske
+	output7 = input7.Sharpen(input7, .0, -1.0, .0, -1.0, 5.0, -1.0, .0, -1.0, .0); //Keskinlestirme iÃ§in uygun maske
 	output7.writeImage(outputName7);
 
 	input8.readImage(inputName);
-	output8 = input8.Sharpen(input8, -1.0, -1.0, -1.0, -1.0, 9.0, -1.0, -1.0, -1.0, -1.0); //Daha iyi keskinlestirme için uygun maske
+	output8 = input8.Sharpen(input8, -1.0, -1.0, -1.0, -1.0, 9.0, -1.0, -1.0, -1.0, -1.0); //Daha iyi keskinlestirme iÃ§in uygun maske
 	output8.writeImage(outputName8);
 
 	Image input9, output9, output10, output11, output12;
@@ -99,7 +99,7 @@ int main()
 	char outputName11[] = "Fig0340(d)(dipxe_text).pgm";
 
 	input9.readImage(inputName9);
-	output9 = input9.GaussianFilter5x5(input9, 1.0f);  //k=1 seçildi.
+	output9 = input9.GaussianFilter5x5(input9, 1.0f);  //k=1 seÃ§ildi.
 	output9.writeImage(outputName9);
 
 
